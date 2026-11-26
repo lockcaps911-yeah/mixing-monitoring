@@ -322,7 +322,7 @@ export async function POST(
       }
     }
 
-    if (isLine4) await notifyLine4Realtime(client, msg);
+    if (isLine4 && process.env.VERCEL !== '1') await notifyLine4Realtime(client, msg);
     await client.query('COMMIT');
   } catch (err) {
     await client.query('ROLLBACK');
