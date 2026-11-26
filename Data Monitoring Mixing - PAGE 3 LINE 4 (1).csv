@@ -1,0 +1,7 @@
+Tag,Parameter,Satuan,Keterangan,Value 1 HMI,Value 1 KEPServer,Value 2 HMI,Value 2 KEPServer,value/bit,,
+TT1008,Temperatur,°C,Suhu cairan pada jalur proses,25,3452,"25,3",3490,25,"y = 0,0078947x - 2,2526",
+TT1009,Temperatur,°C,Suhu cairan pada jalur proses,"24,1",3331,"24,2",3348,"0,005882352941","y = 0,0058824x + 4,5059","24,1788556"
+TT1010,Temperatur,°C,Suhu cairan pada jalur proses,"25,6",3541,"25,2",3473,"0,005882352941","y = 0,0058824x + 4,7706",
+TT1011,Temperatur,°C,Suhu cairan pada jalur keluaran akhir,24,3322,"24,2",3347,"0,008","y = 0,0080000x - 2,5760",
+TT1013,Temperatur,°C,Suhu cairan pada jalur filter,"55,4",7588,"59,1",8178,"0,006271186441","y = 0,0062712x + 7,8142",
+CT1003,Konduktivitas,µS/cm,Konduktivitas cairan pada jalur filter,"4,6",2271,"0,3",127,"0,002005597015","y = 0,0020056x + 0,0453",

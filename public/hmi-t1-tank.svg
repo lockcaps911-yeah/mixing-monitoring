@@ -1,0 +1,250 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="230 130 2080 1070" width="100%" font-family="Consolas,'Courier New',monospace">
+<style>
+.bg{fill:#02020a}
+.pipe{fill:none;stroke-width:3.2;stroke-linejoin:round}
+.hose{fill:none;stroke:#e6e6cc;stroke-width:2}
+.lbl ellipse,.lbl rect{fill:#12041a;stroke:#e060ff;stroke-width:3}
+.lbl text{fill:#f4f4f4;font-size:14px;font-weight:700;text-anchor:middle}
+.valve .body{stroke:#111;stroke-width:1.5;transition:fill .2s}
+.valve[data-state=on] .body{fill:#39ff14}
+.valve[data-state=off] .body{fill:#ff2a2a}
+.valve[data-state=unknown] .body{fill:#9aa0a6}
+.valve[data-state=communication-error] .body{fill:#f79009}
+.valve .stem{stroke:#ddd;stroke-width:2}
+.valve .act{fill:#111;stroke:#ddd;stroke-width:2}
+.valve[data-state=on] .act{fill:#39ff14}
+.valve[data-state=off] .act{fill:#ff2a2a}
+.valve[data-state=unknown] .act{fill:#9aa0a6}
+.valve[data-state=communication-error] .act{fill:#f79009}
+.vb rect{fill:#04141a;stroke:#fff;stroke-width:3}
+.vb text{fill:#41f0ff;font-size:23px;text-anchor:middle}
+.vb .u{font-size:14px}
+.txt{fill:#e8e8e8;font-size:20px;font-weight:700}
+.eq{fill:#f2efd0;stroke:#fff;stroke-width:2}
+.pk{fill:none;stroke:#e060ff;stroke-width:3}
+.btn rect{fill:#6b7ea3;stroke:#c9d4ee;stroke-width:2}
+.btn text{fill:#fff;font-size:26px;text-anchor:middle}
+</style>
+<rect class="bg" x="230" y="130" width="2080" height="1070"/>
+<polyline class="pipe" stroke="#e6e6cc" points="325,148 2265,148"/>
+<polygon points="313,140 335,148 313,156" fill="#e6e6cc"/>
+<text class="txt" x="277" y="148" text-anchor="middle" dominant-baseline="middle">CA</text>
+<polyline class="pipe" stroke="#ff2a2a" points="325,170 2265,170"/>
+<polygon points="313,162 335,170 313,178" fill="#ff2a2a"/>
+<text class="txt" x="277" y="170" text-anchor="middle" dominant-baseline="middle">LS</text>
+<polyline class="pipe" stroke="#ffd400" points="325,193 2265,193"/>
+<polygon points="313,185 335,193 313,201" fill="#ffd400"/>
+<text class="txt" x="277" y="193" text-anchor="middle" dominant-baseline="middle">PS</text>
+<polyline class="pipe" stroke="#1f4fff" points="325,217 2265,217"/>
+<polygon points="337,209 315,217 337,225" fill="#1f4fff"/>
+<text class="txt" x="277" y="217" text-anchor="middle" dominant-baseline="middle">CWR</text>
+<polyline class="pipe" stroke="#1f4fff" points="325,240 2265,240"/>
+<polygon points="337,232 315,240 337,248" fill="#1f4fff"/>
+<text class="txt" x="277" y="240" text-anchor="middle" dominant-baseline="middle">CWS</text>
+<polyline class="pipe" stroke="#25e0e0" points="325,264 2265,264"/>
+<polygon points="337,256 315,264 337,272" fill="#25e0e0"/>
+<text class="txt" x="277" y="264" text-anchor="middle" dominant-baseline="middle">WFI</text>
+<polyline class="pipe" stroke="#e6e6cc" points="446,148 446,460 862,460 862,700"/>
+<polyline class="pipe" stroke="#e6e6cc" points="460,460 460,562"/>
+<polygon points="854,548 870,548 862,570" fill="#e6e6cc"/>
+<polyline class="pipe" stroke="#ffd400" points="382,193 382,905"/>
+<polyline class="pipe" stroke="#ffd400" points="382,880 410,880"/>
+<polyline class="pipe" stroke="#ffd400" points="485,337 485,392 1293,392 1293,590"/>
+<polyline class="pipe" stroke="#ffd400" points="485,337 600,337"/>
+<polyline class="pipe" stroke="#ffd400" points="485,392 485,562 495,670"/>
+<polyline class="pipe" stroke="#ffd400" points="431,562 600,562"/>
+<polyline class="pipe" stroke="#ffd400" points="405,670 660,670"/>
+<polyline class="pipe" stroke="#ffd400" points="660,650 660,1085"/>
+<polygon points="664,1073 680,1073 672,1095" fill="#ffd400"/>
+<polyline class="pipe" stroke="#ffd400" points="1215,590 1385,590"/>
+<polyline class="pipe" stroke="#ffd400" points="580,748 660,748"/>
+<polyline class="pipe" stroke="#1f4fff" points="702,217 702,833 965,833"/>
+<polyline class="pipe" stroke="#1f4fff" points="757,240 757,740"/>
+<polygon points="694,551 710,551 702,573" fill="#1f4fff"/>
+<polygon points="749,551 765,551 757,573" fill="#1f4fff"/>
+<polyline class="pipe" stroke="#ff2a2a" points="797,170 797,600"/>
+<polygon points="800,548 816,548 808,570" fill="#ff2a2a"/>
+<polyline class="pipe" stroke="#ff2a2a" points="808,560 808,740"/>
+<polyline class="pipe" stroke="#e6e6cc" points="862,700 862,740"/>
+<polyline class="pipe" stroke="#e6e6cc" points="757,740 935,740"/>
+<polyline class="pipe" stroke="#e6e6cc" points="935,740 968,740"/>
+<polyline class="pipe" stroke="#25e0e0" points="620,264 620,345 1930,345 1930,1085"/>
+<polyline class="pipe" stroke="#25e0e0" points="1035,345 1035,690"/>
+<polyline class="pipe" stroke="#25e0e0" points="1485,345 1485,1085"/>
+<polyline class="pipe" stroke="#9dff00" points="932,490 1423,490 1423,693 1355,693 1355,880"/>
+<polyline class="pipe" stroke="#9dff00" points="932,490 932,610 983,610 983,640"/>
+<polyline class="pipe" stroke="#9dff00" points="1043,610 1043,650"/>
+<polyline class="pipe" stroke="#9dff00" points="1200,668 1355,668"/>
+<polyline class="pipe" stroke="#9dff00" points="1195,665 1195,700"/>
+<polyline class="pipe" stroke="#9dff00" points="1388,490 1388,625"/>
+<polyline class="pipe" stroke="#9dff00" points="1000,850 1000,880 2285,880"/>
+<polyline class="pipe" stroke="#9dff00" points="2172,880 2172,343 2075,343 2075,430"/>
+<polygon points="1064,872 1042,880 1064,888" fill="#9dff00"/>
+<polyline class="pipe" stroke="#ff2a2a" points="835,1097 1920,1097"/>
+<polyline class="pipe" stroke="#ff2a2a" points="830,1150 830,930"/>
+<polyline class="pipe" stroke="#ff2a2a" points="330,1030 330,1160"/>
+<polyline class="pipe" stroke="#ff2a2a" points="330,1150 830,1150"/>
+<polyline class="pipe" stroke="#ff2a2a" points="330,1035 520,1035 520,1062"/>
+<polyline class="pipe" stroke="#ff2a2a" points="420,1065 420,1135"/>
+<polyline class="pipe" stroke="#ff2a2a" points="1187,880 1187,1085"/>
+<polygon points="1182,1066 1198,1066 1190,1088" fill="#ff2a2a"/>
+<polyline class="pipe" stroke="#ff2a2a" points="1290,943 1290,1085"/>
+<polygon points="1285,1066 1301,1066 1293,1088" fill="#ff2a2a"/>
+<polyline class="pipe" stroke="#ff2a2a" points="1388,625 1388,1085"/>
+<polygon points="1383,1066 1399,1066 1391,1088" fill="#ff2a2a"/>
+<polyline class="pipe" stroke="#ff2a2a" points="1487,826 1487,1085"/>
+<polygon points="1482,1066 1498,1066 1490,1088" fill="#ff2a2a"/>
+<polyline class="pipe" stroke="#ff2a2a" points="1658,703 1658,1085"/>
+<polygon points="1653,1066 1669,1066 1661,1088" fill="#ff2a2a"/>
+<polyline class="pipe" stroke="#ff2a2a" points="1810,700 1810,1085"/>
+<polygon points="1805,1066 1821,1066 1813,1088" fill="#ff2a2a"/>
+<polyline class="pipe" stroke="#ff2a2a" points="1920,826 1920,1085"/>
+<polygon points="1915,1066 1931,1066 1923,1088" fill="#ff2a2a"/>
+<polyline class="pipe" stroke="#ff2a2a" points="1608,703 1658,703"/>
+<polyline class="pipe" stroke="#ff2a2a" points="1763,700 1810,700"/>
+<polyline class="pipe" stroke="#ff2a2a" points="1608,703 1608,760"/>
+<polyline class="pipe" stroke="#ff2a2a" points="1763,700 1763,760"/>
+<polyline class="pipe" stroke="#ff2a2a" points="380,880 380,960 830,960"/>
+<polyline class="hose" points="955,650 945,655 955,660 945,665 955,670 945,675 955,680"/>
+<polyline class="hose" points="1050,640 1040,645 1050,650 1040,655 1050,660 1040,665 1050,670"/>
+<polyline class="hose" points="1110,887 1115,877 1120,887 1125,877 1130,887 1135,877 1140,887"/>
+<polyline class="hose" points="1215,595 1220,585 1225,595 1230,585 1235,595 1240,585 1245,595"/>
+<polyline class="hose" points="1215,673 1220,663 1225,673 1230,663 1235,673 1240,663 1245,673"/>
+<polyline class="hose" points="920,745 925,735 930,745 935,735 940,745 945,735 950,745"/>
+<polyline class="hose" points="920,838 925,828 930,838 935,828 940,838 945,828 950,838"/>
+<path class="eq" d="M965,745 Q965,685 1033,685 Q1100,685 1100,745 L1100,812 Q1100,852 1033,862 Q965,852 965,812 Z"/>
+<path d="M1000,862 L1000,900 M985,900 L1015,900" stroke="#fff" stroke-width="3" fill="none"/>
+<text x="1033" y="792" font-size="46" text-anchor="middle" fill="#555" font-weight="700">T1</text>
+<text class="txt" x="940" y="930" font-size="14" text-anchor="end">WM1-01</text><text class="txt" x="1010" y="922" font-size="12">MS1-01</text>
+<rect class="eq" x="581" y="588" width="28" height="52"/><rect class="eq" x="576" y="578" width="38" height="12"/>
+<rect class="eq" x="1181" y="612" width="28" height="55" fill="#e8c878"/><rect class="eq" x="1176" y="602" width="38" height="12"/>
+<rect class="eq" x="1585" y="760" width="46" height="100" rx="20"/>
+<polyline class="pipe" stroke="#9dff00" points="1608,860 1608,880"/>
+<rect class="eq" x="1737" y="760" width="46" height="100" rx="20"/>
+<polyline class="pipe" stroke="#9dff00" points="1760,860 1760,880"/>
+<g class="lbl"><ellipse cx="548" cy="603" rx="25" ry="23"/><text x="548" y="601">AF</text><text x="548" y="616">1-02</text></g>
+<g class="lbl"><ellipse cx="1152" cy="620" rx="25" ry="23"/><text x="1152" y="618">AF</text><text x="1152" y="633">1-01</text></g>
+<g class="lbl"><ellipse cx="1556" cy="797" rx="25" ry="23"/><text x="1556" y="795">MF</text><text x="1556" y="810">1-01</text></g>
+<g class="lbl"><ellipse cx="1714" cy="797" rx="25" ry="23"/><text x="1714" y="795">MF</text><text x="1714" y="810">1-02</text></g>
+<text class="txt" x="1580" y="912" fill="#fff" style="font-size:24px">0.45</text><text class="txt" x="1728" y="910" style="font-size:24px">0.22</text>
+<text class="txt" x="850" y="765" text-anchor="middle">Jacketed</text>
+<g class="btn" id="btn-heat"><rect x="762" y="772" width="98" height="48"/><text x="811" y="806">heat</text></g>
+<g class="btn" id="btn-cool"><rect x="862" y="772" width="98" height="48"/><text x="911" y="806">cool</text></g>
+<circle cx="1285" cy="880" r="22" fill="#111" stroke="#fff" stroke-width="3"/><polygon points="1278,868 1278,892 1298,880" fill="#fff"/>
+<text class="txt" x="1243" y="855" style="font-size:18px">IN1. P1</text>
+<rect class="pk" x="2008" y="430" width="132" height="28"/><path class="pk" d="M2085,458 V560 M2078,520 H2098 V545 H2078 Z M2085,560 V620 M2085,620 C2085,660 2118,630 2118,670 V760"/>
+<rect class="pk" x="2108" y="728" width="22" height="30"/><text class="txt" x="2068" y="790" style="font-size:22px">Class A filling</text>
+<polygon class="body" points="373,908 382,918 391,908" fill="#f2f2f2"/><circle cx="410" cy="918" r="8" fill="none" stroke="#fff" stroke-width="3"/><circle cx="826" cy="930" r="8" fill="none" stroke="#fff" stroke-width="3"/><circle cx="420" cy="1135" r="8" fill="none" stroke="#fff" stroke-width="3"/>
+<text class="txt" x="278" y="1156" style="font-size:22px">Cold</text><text class="txt" x="376" y="1156" style="font-size:22px">Hot</text>
+<path d="M330,1175 l12,-12 M330,1175 l-12,-12 M342,1175 h-24" stroke="#f33" stroke-width="2"/>
+<path d="M425,1175 l12,-12 M425,1175 l-12,-12 M437,1175 h-24" stroke="#f33" stroke-width="2"/>
+<g class="valve DKV" id="DKV-1-01" data-tag="DKV 1-01" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="613,296 622,308 631,296"/><polygon class="body" points="613,320 622,308 631,320"/><line class="stem" x1="622" y1="308" x2="635" y2="308"/><rect class="act" x="635" y="301" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="655" cy="308" rx="25" ry="23"/><text x="655" y="306">DKV</text><text x="655" y="321">1-01</text></g>
+<g class="valve DKV" id="DKV-1-02" data-tag="DKV 1-02" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="568,328 580,337 568,346"/><polygon class="body" points="592,328 580,337 592,346"/><line class="stem" x1="580" y1="337" x2="580" y2="324"/><rect class="act" x="573" y="312" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="580" cy="370" rx="25" ry="23"/><text x="580" y="368">DKV</text><text x="580" y="383">1-02</text></g>
+<g class="valve PBV" id="PBV-1-01" data-tag="PBV 1-01" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="504,383 516,392 504,401"/><polygon class="body" points="528,383 516,392 528,401"/><line class="stem" x1="516" y1="392" x2="516" y2="379"/><rect class="act" x="509" y="367" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="517" cy="428" rx="25" ry="23"/><text x="517" y="426">PBV</text><text x="517" y="441">1-01</text></g>
+<g class="valve PBV" id="PBV-1-02" data-tag="PBV 1-02" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="451,488 460,500 469,488"/><polygon class="body" points="451,512 460,500 469,512"/><line class="stem" x1="460" y1="500" x2="473" y2="500"/><rect class="act" x="473" y="493" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="427" cy="500" rx="25" ry="23"/><text x="427" y="498">PBV</text><text x="427" y="513">1-02</text></g>
+<g class="valve PBV" id="PBV-1-03" data-tag="PBV 1-03" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="419,553 431,562 419,571"/><polygon class="body" points="443,553 431,562 443,571"/><line class="stem" x1="431" y1="562" x2="431" y2="549"/><rect class="act" x="424" y="537" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="432" cy="596" rx="25" ry="23"/><text x="432" y="594">PBV</text><text x="432" y="609">1-03</text></g>
+<g class="valve PBV" id="PBV-1-04" data-tag="PBV 1-04" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="423,661 435,670 423,679"/><polygon class="body" points="447,661 435,670 447,679"/><line class="stem" x1="435" y1="670" x2="435" y2="657"/><rect class="act" x="428" y="645" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="436" cy="704" rx="25" ry="23"/><text x="436" y="702">PBV</text><text x="436" y="717">1-04</text></g>
+<g class="valve PBV" id="PBV-1-05" data-tag="PBV 1-05" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="525,661 537,670 525,679"/><polygon class="body" points="549,661 537,670 549,679"/><line class="stem" x1="537" y1="670" x2="537" y2="657"/><rect class="act" x="530" y="645" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="535" cy="704" rx="25" ry="23"/><text x="535" y="702">PBV</text><text x="535" y="717">1-05</text></g>
+<g class="valve PBV" id="PBV-1-06" data-tag="PBV 1-06" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="651,696 660,708 669,696"/><polygon class="body" points="651,720 660,708 669,720"/><line class="stem" x1="660" y1="708" x2="673" y2="708"/><rect class="act" x="673" y="701" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="620" cy="707" rx="25" ry="23"/><text x="620" y="705">PBV</text><text x="620" y="720">1-06</text></g>
+<g class="valve PBV" id="PBV-1-07" data-tag="PBV 1-07" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="568,739 580,748 568,757"/><polygon class="body" points="592,739 580,748 592,757"/><line class="stem" x1="580" y1="748" x2="580" y2="735"/><rect class="act" x="573" y="723" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="547" cy="745" rx="25" ry="23"/><text x="547" y="743">PBV</text><text x="547" y="758">1-07</text></g>
+<g class="valve DKV" id="DKV-1-03" data-tag="DKV 1-03" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1026,436 1035,448 1044,436"/><polygon class="body" points="1026,460 1035,448 1044,460"/><line class="stem" x1="1035" y1="448" x2="1048" y2="448"/><rect class="act" x="1048" y="441" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="1065" cy="447" rx="25" ry="23"/><text x="1065" y="445">DKV</text><text x="1065" y="460">1-03</text></g>
+<g class="valve DKV" id="DKV-1-04" data-tag="DKV 1-04" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="956,481 968,490 956,499"/><polygon class="body" points="980,481 968,490 980,499"/><line class="stem" x1="968" y1="490" x2="968" y2="477"/><rect class="act" x="961" y="465" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="968" cy="524" rx="25" ry="23"/><text x="968" y="522">DKV</text><text x="968" y="537">1-04</text></g>
+<g class="valve DKV" id="DKV-1-05" data-tag="DKV 1-05" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1077,481 1089,490 1077,499"/><polygon class="body" points="1101,481 1089,490 1101,499"/><line class="stem" x1="1089" y1="490" x2="1089" y2="477"/><rect class="act" x="1082" y="465" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="1089" cy="524" rx="25" ry="23"/><text x="1089" y="522">DKV</text><text x="1089" y="537">1-05</text></g>
+<g class="valve DKV" id="DKV-1-06" data-tag="DKV 1-06" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1031,538 1040,550 1049,538"/><polygon class="body" points="1031,562 1040,550 1049,562"/><line class="stem" x1="1040" y1="550" x2="1053" y2="550"/><rect class="act" x="1053" y="543" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="1008" cy="550" rx="25" ry="23"/><text x="1008" y="548">DKV</text><text x="1008" y="563">1-06</text></g>
+<g class="valve PBV" id="PBV-1-08" data-tag="PBV 1-08" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="748,686 757,698 766,686"/><polygon class="body" points="748,710 757,698 766,710"/><line class="stem" x1="757" y1="698" x2="770" y2="698"/><rect class="act" x="770" y="691" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="732" cy="660" rx="25" ry="23"/><text x="732" y="658">PBV</text><text x="732" y="673">1-08</text></g>
+<g class="valve PBV" id="PBV-1-09" data-tag="PBV 1-09" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="799,686 808,698 817,686"/><polygon class="body" points="799,710 808,698 817,710"/><line class="stem" x1="808" y1="698" x2="821" y2="698"/><rect class="act" x="821" y="691" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="785" cy="660" rx="25" ry="23"/><text x="785" y="658">PBV</text><text x="785" y="673">1-09</text></g>
+<g class="valve PBV" id="PBV-1-10" data-tag="PBV 1-10" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="853,686 862,698 871,686"/><polygon class="body" points="853,710 862,698 871,710"/><line class="stem" x1="862" y1="698" x2="875" y2="698"/><rect class="act" x="875" y="691" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="838" cy="660" rx="25" ry="23"/><text x="838" y="658">PBV</text><text x="838" y="673">1-10</text></g>
+<g class="valve PBV" id="PBV-1-11" data-tag="PBV 1-11" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1284,541 1293,553 1302,541"/><polygon class="body" points="1284,565 1293,553 1302,565"/><line class="stem" x1="1293" y1="553" x2="1306" y2="553"/><rect class="act" x="1306" y="546" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="1255" cy="552" rx="25" ry="23"/><text x="1255" y="550">PBV</text><text x="1255" y="565">1-11</text></g>
+<g class="valve PBV" id="PBV-1-12" data-tag="PBV 1-12" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1379,541 1388,553 1397,541"/><polygon class="body" points="1379,565 1388,553 1397,565"/><line class="stem" x1="1388" y1="553" x2="1401" y2="553"/><rect class="act" x="1401" y="546" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="1346" cy="552" rx="25" ry="23"/><text x="1346" y="550">PBV</text><text x="1346" y="565">1-12</text></g>
+<g class="valve PBV" id="PBV-1-13" data-tag="PBV 1-13" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1379,613 1388,625 1397,613"/><polygon class="body" points="1379,637 1388,625 1397,637"/><line class="stem" x1="1388" y1="625" x2="1401" y2="625"/><rect class="act" x="1401" y="618" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="1346" cy="625" rx="25" ry="23"/><text x="1346" y="623">PBV</text><text x="1346" y="638">1-13</text></g>
+<g class="valve PBV" id="PBV-1-14" data-tag="PBV 1-14" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1286,659 1298,668 1286,677"/><polygon class="body" points="1310,659 1298,668 1310,677"/><line class="stem" x1="1298" y1="668" x2="1298" y2="655"/><rect class="act" x="1291" y="643" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="1295" cy="703" rx="25" ry="23"/><text x="1295" y="701">PBV</text><text x="1295" y="716">1-14</text></g>
+<g class="valve PBV" id="PBV-1-15" data-tag="PBV 1-15" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="728,824 740,833 728,842"/><polygon class="body" points="752,824 740,833 752,842"/><line class="stem" x1="740" y1="833" x2="740" y2="820"/><rect class="act" x="733" y="808" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="742" cy="875" rx="25" ry="23"/><text x="742" y="873">PBV</text><text x="742" y="888">1-15</text></g>
+<g class="valve PBV" id="PBV-1-16" data-tag="PBV 1-16" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="817,863 826,875 835,863"/><polygon class="body" points="817,887 826,875 835,887"/><line class="stem" x1="826" y1="875" x2="839" y2="875"/><rect class="act" x="839" y="868" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="790" cy="873" rx="25" ry="23"/><text x="790" y="871">PBV</text><text x="790" y="886">1-16</text></g>
+<g class="valve PBV" id="PBV-1-17" data-tag="PBV 1-17" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="896,863 905,875 914,863"/><polygon class="body" points="896,887 905,875 914,887"/><line class="stem" x1="905" y1="875" x2="918" y2="875"/><rect class="act" x="918" y="868" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="866" cy="873" rx="25" ry="23"/><text x="866" y="871">PBV</text><text x="866" y="886">1-17</text></g>
+<g class="valve DKV" id="DKV-1-07" data-tag="DKV 1-07" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1040,871 1052,880 1040,889"/><polygon class="body" points="1064,871 1052,880 1064,889"/><line class="stem" x1="1052" y1="880" x2="1052" y2="867"/><rect class="act" x="1045" y="855" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="1055" cy="916" rx="25" ry="23"/><text x="1055" y="914">DKV</text><text x="1055" y="929">1-07</text></g>
+<g class="valve DKV" id="DKV-1-08" data-tag="DKV 1-08" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1206,871 1218,880 1206,889"/><polygon class="body" points="1230,871 1218,880 1230,889"/><line class="stem" x1="1218" y1="880" x2="1218" y2="867"/><rect class="act" x="1211" y="855" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="1218" cy="912" rx="25" ry="23"/><text x="1218" y="910">DKV</text><text x="1218" y="925">1-08</text></g>
+<g class="valve DKV" id="DKV-1-09" data-tag="DKV 1-09" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1178,931 1187,943 1196,931"/><polygon class="body" points="1178,955 1187,943 1196,955"/><line class="stem" x1="1187" y1="943" x2="1200" y2="943"/><rect class="act" x="1200" y="936" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="1155" cy="943" rx="25" ry="23"/><text x="1155" y="941">DKV</text><text x="1155" y="956">1-09</text></g>
+<g class="valve DKV" id="DKV-1-10" data-tag="DKV 1-10" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1281,931 1290,943 1299,931"/><polygon class="body" points="1281,955 1290,943 1299,955"/><line class="stem" x1="1290" y1="943" x2="1303" y2="943"/><rect class="act" x="1303" y="936" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="1257" cy="943" rx="25" ry="23"/><text x="1257" y="941">DKV</text><text x="1257" y="956">1-10</text></g>
+<g class="valve DKV" id="DKV-1-11" data-tag="DKV 1-11" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1683,871 1695,880 1683,889"/><polygon class="body" points="1707,871 1695,880 1707,889"/><line class="stem" x1="1695" y1="880" x2="1695" y2="867"/><rect class="act" x="1688" y="855" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="1695" cy="912" rx="25" ry="23"/><text x="1695" y="910">DKV</text><text x="1695" y="925">1-11</text></g>
+<g class="valve DKV" id="DKV-1-12" data-tag="DKV 1-12" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1599,715 1608,727 1617,715"/><polygon class="body" points="1599,739 1608,727 1617,739"/><line class="stem" x1="1608" y1="727" x2="1621" y2="727"/><rect class="act" x="1621" y="720" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="1574" cy="727" rx="25" ry="23"/><text x="1574" y="725">DKV</text><text x="1574" y="740">1-12</text></g>
+<g class="valve DKV" id="DKV-1-13" data-tag="DKV 1-13" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1406,871 1418,880 1406,889"/><polygon class="body" points="1430,871 1418,880 1430,889"/><line class="stem" x1="1418" y1="880" x2="1418" y2="867"/><rect class="act" x="1411" y="855" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="1418" cy="912" rx="25" ry="23"/><text x="1418" y="910">DKV</text><text x="1418" y="925">1-13</text></g>
+<g class="valve DKV" id="DKV-1-14" data-tag="DKV 1-14" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1476,388 1485,400 1494,388"/><polygon class="body" points="1476,412 1485,400 1494,412"/><line class="stem" x1="1485" y1="400" x2="1498" y2="400"/><rect class="act" x="1498" y="393" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="1450" cy="400" rx="25" ry="23"/><text x="1450" y="398">DKV</text><text x="1450" y="413">1-14</text></g>
+<g class="valve DKV" id="DKV-1-15" data-tag="DKV 1-15" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1476,814 1485,826 1494,814"/><polygon class="body" points="1476,838 1485,826 1494,838"/><line class="stem" x1="1485" y1="826" x2="1498" y2="826"/><rect class="act" x="1498" y="819" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="1450" cy="826" rx="25" ry="23"/><text x="1450" y="824">DKV</text><text x="1450" y="839">1-15</text></g>
+<g class="valve DKV" id="DKV-1-16" data-tag="DKV 1-16" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1476,929 1485,941 1494,929"/><polygon class="body" points="1476,953 1485,941 1494,953"/><line class="stem" x1="1485" y1="941" x2="1498" y2="941"/><rect class="act" x="1498" y="934" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="1453" cy="941" rx="25" ry="23"/><text x="1453" y="939">DKV</text><text x="1453" y="954">1-16</text></g>
+<g class="valve DKV" id="DKV-1-17" data-tag="DKV 1-17" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1508,871 1520,880 1508,889"/><polygon class="body" points="1532,871 1520,880 1532,889"/><line class="stem" x1="1520" y1="880" x2="1520" y2="867"/><rect class="act" x="1513" y="855" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="1520" cy="912" rx="25" ry="23"/><text x="1520" y="910">DKV</text><text x="1520" y="925">1-17</text></g>
+<g class="valve DKV" id="DKV-1-18" data-tag="DKV 1-18" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1754,715 1763,727 1772,715"/><polygon class="body" points="1754,739 1763,727 1772,739"/><line class="stem" x1="1763" y1="727" x2="1776" y2="727"/><rect class="act" x="1776" y="720" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="1725" cy="727" rx="25" ry="23"/><text x="1725" y="725">DKV</text><text x="1725" y="740">1-18</text></g>
+<g class="valve DKV" id="DKV-1-19" data-tag="DKV 1-19" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1846,871 1858,880 1846,889"/><polygon class="body" points="1870,871 1858,880 1870,889"/><line class="stem" x1="1858" y1="880" x2="1858" y2="867"/><rect class="act" x="1851" y="855" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="1858" cy="912" rx="25" ry="23"/><text x="1858" y="910">DKV</text><text x="1858" y="925">1-19</text></g>
+<g class="valve DKV" id="DKV-1-20" data-tag="DKV 1-20" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1921,386 1930,398 1939,386"/><polygon class="body" points="1921,410 1930,398 1939,410"/><line class="stem" x1="1930" y1="398" x2="1943" y2="398"/><rect class="act" x="1943" y="391" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="1892" cy="398" rx="25" ry="23"/><text x="1892" y="396">DKV</text><text x="1892" y="411">1-20</text></g>
+<g class="valve DKV" id="DKV-1-21" data-tag="DKV 1-21" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1921,814 1930,826 1939,814"/><polygon class="body" points="1921,838 1930,826 1939,838"/><line class="stem" x1="1930" y1="826" x2="1943" y2="826"/><rect class="act" x="1943" y="819" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="1887" cy="826" rx="25" ry="23"/><text x="1887" y="824">DKV</text><text x="1887" y="839">1-21</text></g>
+<g class="valve DKV" id="DKV-1-22" data-tag="DKV 1-22" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1921,929 1930,941 1939,929"/><polygon class="body" points="1921,953 1930,941 1939,953"/><line class="stem" x1="1930" y1="941" x2="1943" y2="941"/><rect class="act" x="1943" y="934" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="1888" cy="941" rx="25" ry="23"/><text x="1888" y="939">DKV</text><text x="1888" y="954">1-22</text></g>
+<g class="valve DKV" id="DKV-1-23" data-tag="DKV 1-23" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1950,871 1962,880 1950,889"/><polygon class="body" points="1974,871 1962,880 1974,889"/><line class="stem" x1="1962" y1="880" x2="1962" y2="867"/><rect class="act" x="1955" y="855" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="1962" cy="912" rx="25" ry="23"/><text x="1962" y="910">DKV</text><text x="1962" y="925">1-23</text></g>
+<g class="valve DKV" id="DKV-1-24" data-tag="DKV 1-24" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="1346,810 1355,822 1364,810"/><polygon class="body" points="1346,834 1355,822 1364,834"/><line class="stem" x1="1355" y1="822" x2="1368" y2="822"/><rect class="act" x="1368" y="815" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="1328" cy="822" rx="25" ry="23"/><text x="1328" y="820">DKV</text><text x="1328" y="835">1-24</text></g>
+<g class="valve DKV" id="DKV-1-25" data-tag="DKV 1-25" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="2120,871 2132,880 2120,889"/><polygon class="body" points="2144,871 2132,880 2144,889"/><line class="stem" x1="2132" y1="880" x2="2132" y2="867"/><rect class="act" x="2125" y="855" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="2130" cy="912" rx="25" ry="23"/><text x="2130" y="910">DKV</text><text x="2130" y="925">1-25</text></g>
+<g class="valve PBV" id="PBV-1-18" data-tag="PBV 1-18" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="464,1048 473,1060 482,1048"/><polygon class="body" points="464,1072 473,1060 482,1072"/><line class="stem" x1="473" y1="1060" x2="486" y2="1060"/><rect class="act" x="486" y="1053" width="12" height="14"/></g>
+<g class="lbl"><ellipse cx="473" cy="1100" rx="25" ry="23"/><text x="473" y="1098">PBV</text><text x="473" y="1113">1-18</text></g>
+<g class="valve PBV" id="PBV-1-19" data-tag="PBV 1-19" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="412,1088 424,1097 412,1106"/><polygon class="body" points="436,1088 424,1097 436,1106"/><line class="stem" x1="424" y1="1097" x2="424" y2="1084"/><rect class="act" x="417" y="1072" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="384" cy="1100" rx="25" ry="23"/><text x="384" y="1098">PBV</text><text x="384" y="1113">1-19</text></g>
+<g class="valve PBV" id="PBV-1-20" data-tag="PBV 1-20" data-state="unknown" transform="translate(0,0)"><polygon class="body" points="318,1088 330,1097 318,1106"/><polygon class="body" points="342,1088 330,1097 342,1106"/><line class="stem" x1="330" y1="1097" x2="330" y2="1084"/><rect class="act" x="323" y="1072" width="14" height="12"/></g>
+<g class="lbl"><ellipse cx="295" cy="1100" rx="25" ry="23"/><text x="295" y="1098">PBV</text><text x="295" y="1113">1-20</text></g>
+<g class="lbl"><rect x="1110" y="737" width="56" height="46"/><text x="1138" y="766" style="font-size:11px">TT1-01</text></g>
+<g class="vb"><rect x="1168" y="737" width="118" height="34"/><text x="1227.0" y="761.48"><tspan class="v" data-val="TT 1-01">—</tspan><tspan class="u"> °C</tspan></text></g>
+<g class="lbl"><rect x="1110" y="785" width="56" height="46"/><text x="1138" y="814" style="font-size:11px">PT1-01</text></g>
+<g class="vb"><rect x="1168" y="785" width="118" height="34"/><text x="1227.0" y="809.48"><tspan class="v" data-val="PT 1-01">—</tspan><tspan class="u"> bar</tspan></text></g>
+<g class="lbl"><rect x="1125" y="1005" width="56" height="46"/><text x="1153" y="1034" style="font-size:11px">TT1-02</text></g>
+<g class="vb"><rect x="1122" y="1105" width="120" height="38"/><text x="1182.0" y="1132.36"><tspan class="v" data-val="TT 1-02">—</tspan><tspan class="u"> °C</tspan></text></g>
+<g class="lbl"><rect x="1423" y="1000" width="56" height="46"/><text x="1451" y="1029" style="font-size:11px">TT1-03</text></g>
+<g class="vb"><rect x="1432" y="1100" width="120" height="38"/><text x="1492.0" y="1127.36"><tspan class="v" data-val="TT 1-03">—</tspan><tspan class="u"> °C</tspan></text></g>
+<g class="lbl"><rect x="1855" y="997" width="56" height="46"/><text x="1883" y="1026" style="font-size:11px">TT1-04</text></g>
+<g class="vb"><rect x="1838" y="1097" width="120" height="38"/><text x="1898.0" y="1124.36"><tspan class="v" data-val="TT 1-04">—</tspan><tspan class="u"> °C</tspan></text></g>
+<g class="lbl"><rect x="561" y="1052" width="56" height="46"/><text x="589" y="1081" style="font-size:11px">TT1-05</text></g>
+<g class="vb"><rect x="535" y="1110" width="120" height="38"/><text x="595.0" y="1137.36"><tspan class="v" data-val="TT 1-05">—</tspan><tspan class="u"> °C</tspan></text></g>
+<g class="lbl"><rect x="408" y="975" width="56" height="46"/><text x="436" y="1004" style="font-size:11px">CE1-01</text></g>
+<g class="vb"><rect x="465" y="985" width="180" height="36"/><text x="555.0" y="1010.92"><tspan class="v" data-val="CE 1-01">—</tspan><tspan class="u"> µs/cm</tspan></text></g>
+<g class="lbl"><rect x="945" y="950" width="56" height="46"/><text x="973" y="979" style="font-size:11px">WM1-01</text></g>
+<g class="vb"><rect x="892" y="1002" width="155" height="38"/><text x="969.5" y="1029.36"><tspan class="v" data-val="WM 1-01">—</tspan><tspan class="u"> kg</tspan></text></g>
+<g class="vb"><rect x="1005" y="945" width="130" height="36"/><text x="1070.0" y="970.92"><tspan class="v" data-val="AGIT">—</tspan><tspan class="u"> rpm</tspan></text></g>
+<g class="vb"><rect x="1298" y="897" width="95" height="36"/><text x="1345.5" y="922.92"><tspan class="v" data-val="IN1.P1">—</tspan><tspan class="u"> %</tspan></text></g>
+
+</svg>

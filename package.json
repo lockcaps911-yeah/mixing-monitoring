@@ -1,0 +1,59 @@
+{
+  "name": "mixing-monitoring",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "node --import tsx --test --test-reporter=tap tests/kepserver.test.ts",
+    "sim": "tsx --env-file=.env.local scripts/simulator-line3.ts",
+    "sim:line4": "tsx --env-file=.env.local scripts/simulator.ts",
+    "sim:m2": "tsx --env-file=.env.local scripts/simulator-m2.ts",
+    "kepserver": "tsx --env-file=.env.local scripts/kepserver-client.ts",
+    "kepserver:line3": "tsx --env-file=.env.local scripts/kepserver-client.ts --line=line3",
+    "kepserver:line4": "tsx --env-file=.env.local scripts/kepserver-client.ts --line=line4",
+    "import:kepserver-tags": "tsx --env-file=.env.local scripts/import-kepserver-tags.ts",
+    "admin:create": "tsx --env-file=.env.local scripts/create-admin.ts",
+    "admin:list": "tsx --env-file=.env.local scripts/list-admins.ts"
+  },
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.8",
+    "next": "16.3.6",
+    "node-opcua": "^2.187.9",
+    "pg": "^8.23.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.6",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NadilaAmaliaaa/mixing-monitoring.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NadilaAmaliaaa/mixing-monitoring/issues"
+  },
+  "homepage": "https://github.com/NadilaAmaliaaa/mixing-monitoring#readme"
+}

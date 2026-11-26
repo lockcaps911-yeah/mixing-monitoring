@@ -1,0 +1,10 @@
+Tag,Parameter,Satuan,Keterangan,Value 1 HMI,Value 1 KEPServer,Value 2 HMI,Value 2 KEPServer,value/bit,
+TT1001,Temperatur,°C,Tanki Mixing TK1001,"85,9",11867,84,11625,"0,007851239669","y = 0,0078512x - 7,2707"
+WM1001,Berat/massa,kg,Tanki Mixing TK1001,11183,26126,"11637,7",24591,"-0,2962214984","y = -0,2962215x + 18922,0829"
+PT1001,Tekanan,bar,Tekanan pada tanki mixing,"2,01",13918,0,4598,"0,0002156652361","y = 0,0002157x - 0,9916"
+TT1002,Temperatur,°C,Suhu buangan steam,"25,4",3503,"25,7",3557,"0,005555555556","y = 0,0055556x + 5,9389"
+TT1003,Temperatur,°C,Suhu cairan keluaran mixing,"35,4",4905,33,4563,"0,00701754386","y = 0,0070175x + 0,9789"
+TT1004,Temperatur,°C,Suhu cairan pada saluran akhir,"27,9",3860,"28,1",3877,"0,01176470588","y = 0,0117647x - 17,5118"
+CT1001,konduktivitas,µS/cm,Konduktivitas Cairan,"1,1",627,"0,7",396,"0,001731601732","y = 0,0017316x + 0,0143"
+P1001,Kecepatan/frekuensi pompa,Hz,Pompa proses,,,,,#DIV/0!,#DIV/0!
+TK1001,Kecepatan agitator/motor,Hz,Tanki Mixing TK1001,,,,,#DIV/0!,#DIV/0!

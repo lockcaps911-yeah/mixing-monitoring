@@ -1,0 +1,4 @@
+Tag,Parameter,Satuan,Keterangan,Value 1 HMI,Value 1 KEPServer,Value 2 HMI,Value 2 KEPServer,value/bit
+TT1012,Temperatur,°C,Suhu cairan pada filling buffer tank,"27,1",3752,,,"y = 0,0072228x + 0,0000"
+PT1003,Tekanan,bar,Tekanan pada filling buffer tank,0,4633,,,"y = 0,0000000x + 0,0000"
+CT1004,Konduktivitas,µS/cm,Konduktivitas pada filling buffer tank,"1,6",840,"1,5",867,"y = -0,0037037x + 4,7111"
