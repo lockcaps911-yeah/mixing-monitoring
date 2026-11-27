@@ -15,6 +15,8 @@
     "kepserver:line3": "tsx --env-file=.env.local scripts/kepserver-client.ts --line=line3",
     "kepserver:line4": "tsx --env-file=.env.local scripts/kepserver-client.ts --line=line4",
     "import:kepserver-tags": "tsx --env-file=.env.local scripts/import-kepserver-tags.ts",
+    "db:migrate": "tsx scripts/run-migration.ts",
+    "db:migration-status": "tsx scripts/run-migration.ts status",
     "admin:create": "tsx --env-file=.env.local scripts/create-admin.ts",
     "admin:list": "tsx --env-file=.env.local scripts/list-admins.ts"
   },

@@ -8,7 +8,10 @@ export { hashPassword, hashToken, verifyPassword, createSessionToken } from '@/l
 const SESSION_COOKIE = 'mixing_session';
 const SESSION_DURATION_SECONDS = 60 * 60 * 24 * 7;
 const SESSION_DURATION_MS = SESSION_DURATION_SECONDS * 1000;
-export const AUTH_ENABLED = process.env.NODE_ENV === 'production' || process.env.AUTH_ENABLED === 'true';
+const PUBLIC_READ_ONLY_MODE =
+  process.env.VERCEL_ENV === 'production' && process.env.PUBLIC_READ_ONLY_MODE === 'true';
+export const AUTH_ENABLED =
+  !PUBLIC_READ_ONLY_MODE && (process.env.NODE_ENV === 'production' || process.env.AUTH_ENABLED === 'true');
 
 const TRIAL_USER: AuthUser = {
   id: 'development-trial',

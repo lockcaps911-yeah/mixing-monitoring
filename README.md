@@ -1,5 +1,38 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Public read-only presentation mode
+
+For the Vercel **Production** environment only, set `PUBLIC_READ_ONLY_MODE=true`
+and redeploy to make the monitoring dashboard accessible without login. This
+publishes live machine readings and alarm history to anyone with the URL. Admin
+pages and diagnostic endpoints remain unavailable, and the data receiver still
+requires `DATA_RECEIVER_KEY`. Vercel Preview deployments keep authentication
+enabled.
+
+## Neon migration and Vercel connection
+
+Set `.env.local` locally with the Neon connection pool URL:
+
+```dotenv
+DATABASE_URL=postgresql://...neon.tech/mixing-monitoring?sslmode=require
+DATABASE_URL_UNPOOLED=postgresql://...neon.tech/mixing-monitoring?sslmode=require
+```
+
+The migration runner prefers `DATABASE_URL_UNPOOLED` for sequential schema
+changes and refuses to apply migrations to `localhost`, `127.0.0.1`, or `::1`.
+This prevents accidental changes to a local database. Run:
+
+```cmd
+npm.cmd run db:migration-status
+npm.cmd run db:migrate all
+```
+
+Configure the following names in Vercel Project Settings → Environment Variables:
+`DATABASE_URL`, `DATA_RECEIVER_KEY`, and `AUTH_ENABLED` if authentication is
+disabled by the environment. Use the Neon pooled URL for `DATABASE_URL`.
+Production authentication is enabled automatically unless public read-only
+mode is selected. Redeploy after changing environment variables.
+
 ## KEPServerEX IoT Gateway
 
 The bridge polls the KEPServerEX IoT Gateway REST Server and sends readings to

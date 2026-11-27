@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { pool } from '@/lib/db';
-import { AUTH_ENABLED, authErrorResponse, requireAuthenticatedUser } from '@/lib/auth';
+import { authErrorResponse, requireAdmin } from '@/lib/auth';
 import { createKepReadUrl, hasGoodKepQuality } from '@/lib/kepserver';
 
 export const runtime = 'nodejs';
@@ -266,16 +266,10 @@ async function checkDatabase(): Promise<DatabaseStatus> {
 }
 
 export async function GET() {
-  // Proteksi: hanya admin/authenticated user yang bisa akses diagnostik
-  if (AUTH_ENABLED) {
-    try {
-      const user = await requireAuthenticatedUser();
-      if (user.role !== 'ADMIN') {
-        return NextResponse.json({ error: 'Administrator access required' }, { status: 403 });
-      }
-    } catch (error) {
-      return authErrorResponse(error);
-    }
+  try {
+    await requireAdmin();
+  } catch (error) {
+    return authErrorResponse(error);
   }
 
   const [gateway, database] = await Promise.all([
